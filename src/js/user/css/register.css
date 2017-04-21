@@ -1,0 +1,37 @@
+.register{
+    background-color: #FBFBFB;
+}
+.register .text-color{
+    color: #8BCEEA;
+}
+.register .reg-btn{
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: rgba(139, 206, 234, 1);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.register .text-input-verify{
+    border: 1px solid #8BCEEA;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: #fff;
+    background-color: #8BCEEA;
+}
+.register .item img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.register .list{
+    background-color: #fff;
+}
+.register .list .item{
+    border-bottom: 1px solid #eee;
+    font-size: 0.8em;
+    border-width: 1px;
+}

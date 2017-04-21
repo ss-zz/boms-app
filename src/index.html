@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
+
+		<!--build:css css/main.min.css -->
+		<link href="../js_lib/ionic/css/ionic.min.css" rel="stylesheet">
+		<link href="../js_lib/ng-sortable/dist/ng-sortable.min.css" rel="stylesheet"/>
+		<link href="../www/app.css" rel="stylesheet">
+		<!-- endbuild -->
+	</head>
+
+	<!--build:js main.min.js -->
+	<script src="../js_lib/ionic/js/ionic.bundle.min.js"></script>
+
+	<script src="../js_lib/ng-sortable/dist/ng-sortable.min.js"></script>
+	<script src="../js_lib/ionic-datepicker/dist/ionic-datepicker.bundle.min.js"></script>
+	<script src="../js_lib/ionic-timepicker/dist/ionic-timepicker.bundle.min.js"></script>
+
+
+	<script src="../www/templates.js"></script>
+	<script src="../www/app.min.js"></script>
+	<!-- endbuild -->
+
+	<!-- mobile app require -->
+	<script src="pub/ng-cordova.min.js"></script>
+	<script src="cordova.js"></script>
+	<script src="pub/echarts.min.js"></script>
+
+	<style type="text/css">
+		.platform-ios .manual-ios-statusbar-padding{
+		padding-top:20px;
+		}
+		.manual-remove-top-padding{
+		padding-top:0px;
+		}
+		.manual-remove-top-padding .scroll{
+		padding-top:0px !important;
+		}
+		.ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+		margin-left:-10px;
+		margin-right:-10px;
+		}
+		.ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+		border-radius:0px;
+		border-left:0px;
+		border-right: 0px;
+		}
+		.bar .title{
+			color: #00A7B9;
+			font-size: 1.0em;
+		}
+	</style>
+
+	</head>
+	<body ng-app="app" animation="slide-left-right-ios7">
+
+	<ion-nav-bar
+		align-title="center"
+		animation="nav-title-slide-ios7"
+		back-button-type="button-icon"
+		back-button-icon="ion-chevron-left"
+		>
+		<ion-nav-back-button class="button-light">
+			<i class="ion-chevron-left"></i> {{getPreviousTitle() || '返回'}}
+		</ion-nav-back-button>
+	</ion-nav-bar>
+
+	<ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+	<link href="pub/style-ext.css" rel="stylesheet">
+
+	</body>
+</html>

@@ -1,0 +1,106 @@
+<ion-view hide-nav-bar="true">
+    <ion-content padding="false" class="homepage has-footer">
+
+        <!-- 顶部天气区域 -->
+        <div class="weather-bg">
+            <input class="searchInput" type="text" placeholder="搜资讯、医院、疾病" />
+            <div class="weather" ng-if="weather">
+                北京 {{weather.minNum}}~{{weather.maxNum}} {{weather.weatherType}}
+                <span class="float-right mark">{{weather.airQuality}}</span>
+                <span class="float-right">空气质量</span>
+            </div>
+            <div class="notice" ng-if="weather">
+                天气寒冷,注意保暖，今日空气质量优，适宜进行户外运动！
+            </div>
+        </div>
+
+        <div class="line-spe"></div>
+
+        <div class="row bg-white spe-zone border-top border-bottom">
+          <div class="col left-zone border-right"
+            openscheme="SSIONVACC"
+            ext="to=homepage"
+            >
+            <img src="img/homepage/02.png" class="center-img" />
+            <b>预约接种</b>
+            <i class="color-light">线上预约 线下接种</i>
+          </div>
+          <div class="col right-zone">
+            <div class="row border-bottom" ui-sref="diagnosis_select">
+              <div class="col-33">
+                <img src="img/homepage/u349.png" class="center-img" />
+              </div>
+              <div class="col">
+                <b>智能导诊</b>
+                <i class="color-light">智慧就医 精确导诊</i>
+              </div>
+            </div>
+            <div class="row zone-bottom"
+                openlink="http://www.cyjkjy.com/index.php?m=content&c=index&a=lists&catid=49"
+                >
+              <div class="col-33">
+                <img src="img/homepage/u455.png" class="center-img" />
+              </div>
+              <div class="col">
+                <b>健康测评</b>
+                <i class="color-light">健康自测 自我监控</i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-spe"></div>
+
+        <ion-slide-box class="lunbo"
+            show-pager="true"
+            auto-play="true"
+            does-continue="true">
+            <ion-slide ng-repeat="item in newsSlide">
+                <img ng-src="{{item.COVER}}"/>
+                <p>{{item.TITLE}}</p>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="line-spe"></div>
+
+        <div class="common-title">
+            公众服务
+        </div>
+
+        <div class="type-zone">
+            <div class="one-item"
+                ng-repeat="item in itemsOfficialAccounts">
+                <img ng-src="{{item.logo}}"/>
+                <p>{{item.name}}</p>
+            </div>
+            <div class="one-item"
+                ui-sref="service">
+                <img ng-src="img/homepage/icon08.png"/>
+                <p>更多</p>
+            </div>
+        </div>
+        <div class="line-spe"></div>
+
+        <div class="common-title" ui-sref="health_information">
+            健康资讯
+            <span class="right"> &gt; </span>
+        </div>
+        <div class="list news">
+             <a class="item item-thumbnail-left"
+                ng-repeat="item in news"
+                ui-sref="healthinfo_degtail">
+                <img ng-src="{{item.COVER}}" />
+                <h2>{{item.TITLE}}</h2>
+                <p>
+                    {{item.CHANNEL_DESC}}
+                    <span class="float-right">
+                        {{item.VIEW_COUNT}}
+                        <img src="img/homepage/u101.png" />
+                    </span>
+                </p>
+            </a>
+        </div>
+    </ion-content>
+    <!-- 底部导航 -->
+    <ag-tabs/>
+</ion-view>

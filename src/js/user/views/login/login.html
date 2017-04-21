@@ -1,0 +1,60 @@
+<!-- 登录页面 -->
+<ion-view
+	hide-nav-bar="true"
+	class="login">
+
+	<ion-content padding="false">
+
+		<div class="padding"
+			ng-show="hasPreState"
+			ng-click="goBack()">
+				<i class="ion-chevron-left"></i>
+				返回
+		</div>
+
+		<h4 class="title">健康朝阳微应用</h4>
+		<div class="row">
+				<input ng-model="params.phoneNO"
+					type="number"
+					placeholder="用户名称/手机号">
+		</div>
+		<div class="row">
+				<input ng-model="params.password"
+					type="password"
+					placeholder="密码">
+		</div>
+
+		<div class="row">
+			<div class="login-btn" ng-click="login()">登录</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<a ui-sref="register"
+					class="text">
+					用户注册</a>
+			</div>
+			<div class="col">
+				<a ng-click="showForgetPwd()"
+					class="text float-right">
+					忘记密码</a>
+			</div>
+		</div>
+
+		<!--
+		<div class="third-login">
+				<div class="row">
+					<div class="col line"></div>
+					<div class="col mid">第三方登录</div>
+					<div class="col line"></div>
+				</div>
+
+				<div class="row">
+					<div class="col"><img src="img/login/u52.png" /></div>
+					<div class="col"><img src="img/login/u48.png" /></div>
+					<div class="col"><img src="img/login/u50.png" /></div>
+				</div>
+		</div>
+		-->
+
+	</ion-content>
+</ion-view>

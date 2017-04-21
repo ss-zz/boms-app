@@ -1,0 +1,17 @@
+<ion-view title="我的消息">
+
+	<ion-content class="has-header" padding="true">
+
+		<div class="color-light under-line">
+			{{item.SEND_TIME | date:'yyyy-MM-dd HH:mm'}}
+			<span class="color-red" ng-if="item.CHILD_NAME">
+			【{{item.CHILD_NAME}}】
+			</span>
+		</div>
+
+		<div class="padding font-weight font-size-big">
+			{{item.MESSAGE_CONTENT}}
+		</div>
+
+	</ion-content>
+</ion-view>

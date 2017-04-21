@@ -1,0 +1,110 @@
+<!-- 我的主页面 -->
+<ion-view
+	hide-back-button="true"
+	hide-nav-bar="true">
+
+	<ion-content class="main-my has-footer" padding="false">
+
+		<ion-refresher
+			pulling-text="下拉刷新..."
+			on-refresh="refresh()">
+		</ion-refresher>
+
+		<div class="top-info">
+			<div class="position-bg position-bg-op"></div>
+			<div class="position-bg">
+				<div class="icon-bg" ng-click="clickHeadIcon()">
+
+					<div class="img-wrap">
+						<img remote-img="imgId" ng-show="!imgHead && isLogin"/>
+						<img ng-src="{{imgHead}}" ng-show="imgHead && isLogin"/>
+						<img src="img/my/u12011.png" ng-if="!isLogin"/>
+					</div>
+
+					<div class="text-info">
+						<div class="name"
+							ng-if="isLogin"
+							ui-sref="myBasicInfo">
+							{{userInfo.USER_NAME}}
+						</div>
+						<a ui-sref="certification"
+							class="bg-main color-white border-radius padding-left padding-right"
+							ng-if="isLogin">
+							{{userInfo.AUTHEN_STATE | dicTrans: 'USER_AUTH_STATUS'}}
+						&nbsp;&gt;
+						</a>
+						<p class="color-main padding" ng-if="!isLogin">
+							<span ui-sref="login">登录</span>
+							/
+							<span ui-sref="register">注册</span>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="line-spe"></div>
+		<div class="list">
+			<a class="item item-arrow" ui-sref="myArchive">
+				<div class="item-icon-bg item-icon-bg-c1">
+					<img src="img/mine/main_my/u11992.png">
+				</div>
+				<h2 class="line">我的档案</h2>
+			</a>
+			<a class="item item-arrow" ui-sref="myFamily">
+				<div class="item-icon-bg item-icon-bg-c1">
+					<img src="img/mine/main_my/u11954.png">
+				</div>
+				<h2 class="main-sorts">我的家人</h2>
+			</a>
+
+			<div class="line-spe"></div>
+			<a class="item item-arrow"
+				openscheme="SSIONVACC"
+				ext="to=reservrecord">
+				<div class="item-icon-bg item-icon-bg-c8">
+					<img src="img/mine/main_my/u11923.png">
+				</div>
+				<h2 class="line">我的预约</h2>
+			</a>
+			<a class="item item-arrow" ui-sref="myMessage">
+				<div class="item-icon-bg item-icon-bg-c8">
+					<img src="img/mine/main_my/u11963.png">
+				</div>
+				<h2 class="main-sorts line">我的消息<sup>1</sup></h2>
+			</a>
+			<a class="item item-arrow" ui-sref="myLeaveMessage">
+				<div class="item-icon-bg item-icon-bg-c8">
+					<img src="img/mine/main_my/u12003.png">
+				</div>
+				<h2 class="line">我的留言</h2>
+			</a>
+			<a class="item item-arrow" ui-sref="myFav">
+				<div class="item-icon-bg item-icon-bg-c8">
+					<img src="img/mine/main_my/u11979.png">
+				</div>
+				<h2 class="main-sorts">我的收藏</h2>
+			</a>
+
+			<div class="line-spe"></div>
+			<a class="item item-arrow" ui-sref="systemSoftset">
+				<div class="item-icon-bg item-icon-bg-c3">
+					<img src="img/mine/main_my/u11945.png">
+				</div>
+				<h2 class="line">软件设置</h2>
+			</a>
+
+			<a class="item item-arrow" ui-sref="systemFeedback">
+				<div class="item-icon-bg item-icon-bg-c3">
+					<img src="img/mine/main_my/u11934.png">
+				</div>
+				<h2 class="main-sorts">意见反馈</h2>
+			</a>
+		</div>
+	</ion-content>
+
+	<!-- 底部导航 -->
+	<ag-tabs/>
+
+</ion-view>

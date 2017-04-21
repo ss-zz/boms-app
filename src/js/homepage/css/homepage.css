@@ -1,0 +1,139 @@
+.homepage{}
+.homepage .weather-bg{
+    background: url(../img/homepage/homepage.png) center no-repeat;
+    background-size: 100%;
+    padding: 25px 10px 25px 10px;;
+    color: #fff;
+}
+.homepage .weather-bg .searchInput{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: url(../img/homepage/u176.png) left no-repeat;
+    background-color: #fff;
+    padding-left: 50px;
+    background-size: 20px;
+    background-position: 10px;
+    box-shadow: 2px 2px 3px #888888;
+}
+.homepage .weather-bg .weather {
+    font-size: 1.0em;
+    border-bottom: 1px dashed #eee;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.homepage .weather-bg .notice{
+    font-size: 1.0em;
+    margin-top: 15px;
+}
+.homepage .spe-zone{
+    padding: 0px;
+    height: 180px;
+}
+.homepage .spe-zone .col{
+    padding: 0px;
+}
+.homepage .left-zone{
+    text-align: center;
+}
+.homepage .left-zone img{
+    width: 50%;
+}
+.homepage .left-zone b{
+    display: block;
+}
+.homepage .right-zone{
+    text-align: center;
+}
+.homepage .right-zone b{
+    display: block;
+    margin-top: 15px;
+}
+.homepage .right-zone .row{
+    height: 90px;
+}
+.homepage .right-zone img{
+    width: 50%;
+    margin-top: 15px;
+}
+.homepage .right-zone .zone-bottom{
+    margin-top: 20px;
+}
+.homepage .right-zone .zone-bottom b{
+    margin-top: 5px;
+}
+/* 公共服务 */
+.homepage .pubservice img{
+    width: 60px;
+    height: 60px;
+}
+.homepage .pubservice .col{
+    text-align: center;
+}
+.homepage .lunbo ion-slide>img{
+    width: 100%;
+    height: 200px;
+}
+.homepage .slider-slide{
+    z-index: 9999;
+}
+.homepage .slider-slide p{
+    color: #fff;
+    margin-top: -3px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.homepage .slider-pager{
+    text-align: right;
+    background-color: #1569AB;
+    height: 25px;
+    bottom: 7px;
+}
+.homepage .slider-pager .slider-pager-page{
+    color: #fff;
+}
+.homepage .partTitle{
+    padding-left:10px;
+    border-left:2px solid #00A7B9;
+    width:100%;
+}
+.homepage .partTitle .more{
+    float:right;
+    color:#d3d3d3;
+    margin-right: 20px;
+}
+.homepage .news p{
+    margin-top: 20px;
+}
+.homepage .news span img{
+    width: 15px;
+    height: 15px;
+}
+
+/*公众号布局*/
+.homepage .type-zone{
+    min-height: 50px;
+}
+.homepage .type-zone .one-item{
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.homepage .type-zone .one-item img{
+    width: 40px;
+    height: 40px;
+}
+.homepage .type-zone .one-item .handler{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.search-input-top{
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    border: none;
+    margin-right: 10px;
+}

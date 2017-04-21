@@ -1,0 +1,56 @@
+<!-- 注册页面 -->
+<ion-view title="注册"
+    hide-back-button="false"
+    hide-nav-bar="false"
+    class="register">
+
+    <ion-content class="has-header">
+
+        <div class="list">
+            <label class="item">
+                <span class="text-color">国家和地区</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;中国+86
+            </label>
+            <label class="item item-input">
+               <img src="img/register/u84.png" />
+                <input type="number" ng-model="params.phoneNO" placeholder="请输入手机号">
+            </label>
+
+            <span class="item item-input">
+                <img src="img/register/u174.png" />
+                <input type="number" ng-model="params.verifyNO" placeholder="请输入短信验证码">
+                <span class="text-input-verify text-color"
+                    ng-click="sendSms()"
+                    ng-if="!isCountDown">
+                    获取验证码
+                </span>
+                <span class="text-input-verify text-color"
+                    ng-if="isCountDown">
+                    {{countDown}}s
+                </span>
+            </span>
+
+            <label class="item item-input">
+                <img src="img/register/u153.png" />
+                <input type="text" ng-model="params.password" placeholder="6~20位数字、字母密码">
+                <img src="img/register/u151.png" />
+            </label>
+        </div>
+
+        <div class="row">
+            <span>注册即同意</span>
+            <span class="text-color" ui-sref="useragreement">《用户协议》</span>
+        </div>
+
+        <div class="reg-btn" ng-click="register()">注册</div>
+
+        <div class="row">
+            <div class="col align-center">
+                已有账号，直接
+                <a ui-sref="login"
+                    class="text-color">登录</a>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

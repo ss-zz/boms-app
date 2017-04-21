@@ -1,0 +1,60 @@
+<ion-view title="用户信息" hide-back-button="true" hide-nav-bar="true" id="basic_info">
+	<ion-header-bar align-title="center" class="bar-light">
+		<div class="buttons">
+			<a class="button button-clear" ng-click="$ionicGoBack()">
+				<i class="ion-chevron-left"></i>
+			</a>
+		</div>
+		<h4 class="title">用户信息</h4>
+		<div class="buttons">
+			<a class="button button-clear header-title"
+				ui-sref="myBasicInfoEdit">
+				编辑
+			</a>
+		</div>
+	</ion-header-bar>
+
+		<ion-content padding="false" class="has-header">
+			<div>
+				<div class="list">
+					<p class="item">
+						<span class="left">头像</span>
+						<span class="right">
+							<img remote-img="userInfo.IMG_PATH"/>
+						</span>
+					</p>
+					<p class="item">
+						<span class="left">姓名</span>
+						<span class="right">{{userInfo.USER_NAME}}</span>
+					</p>
+					<p class="item">
+						<span class="left">性别</span>
+						<span class="right">{{userInfo.GENDER|dicTrans: 'GENDER'}}</span>
+					</p>
+					<p class="item">
+						<span class="left">出生日期</span>
+						<span class="right">{{userInfo.BIRTHDAY|date:'yyyy-MM-dd'}}</span>
+					</p>
+				</div>
+				<div class="empty-bg"></div>
+				<div class="list">
+					<p class="item">
+						<span class="left">健康档案号</span>
+						<span class="right right-1">{{userInfo.HEALTHRECORD_NO}}</span>
+					</p>
+					<p class="item">
+						<span class="left">手机号码</span>
+						<span class="right right-1">{{userInfo.PHONE_NO}}</span>
+					</p>
+					<p class="item">
+						<span class="left">户籍地址</span>
+						<span class="right right-1">{{userInfo.DOMICILE_ADDRESS}}</span>
+					</p>
+					<p class="item">
+						<span class="left">联系地址</span>
+						<span class="right right-1">{{userInfo.CURRENT_ADDRESS}}</span>
+					</p>
+				</div>
+			</div>
+		</ion-content>
+</ion-view>

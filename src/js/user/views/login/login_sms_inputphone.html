@@ -1,0 +1,21 @@
+<!-- 短信验证码登录页面 -->
+<ion-view title="短信验证码登录" class="register">
+
+  <ion-content padding="false">
+
+    <div class="list">
+      <label class="item">
+          <span class="text-color">国家和地区</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;中国+86
+      </label>
+      <label class="item item-input">
+         <img src="img/register/u84.png" />
+          <input type="number" ng-model="params.phoneNO" placeholder="请输入手机号">
+      </label>
+
+  </div>
+
+  <div class="reg-btn" ng-click="sendSms()">获取验证码</div>
+
+  </ion-content>
+</ion-view>

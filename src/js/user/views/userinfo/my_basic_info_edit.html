@@ -1,0 +1,55 @@
+<ion-view title="用户信息" id="basic_info">
+    <ion-content padding="false">
+
+      <div class="list">
+          <p class="item" ng-click="selectImg()">
+              <span class="left">头像：</span>
+              <span class="right">
+                  <img ng-show="!imgHead" remote-img="userInfo.IMG_PATH"/>
+                  <img ng-show="imgHead" ng-src="imgHead"/>
+              </span>
+          </p>
+          <label class="item item-input">
+              姓名：
+              <input class="align-right" ng-model="updateInfo.USER_NAME" type="text" placeholder="请输入姓名" />
+          </label>
+          <label class="item item-input item-select">
+            <div class="input-label">
+              性别
+            </div>
+            <select ng-model="updateInfo.GENDER"
+              ng-options="code as desc for (code, desc) in genderDics">
+            </select>
+          </label>
+          <label class="item item-arrow" ng-click="openDatePicker();">
+              出生日期：
+              <span class="float-right margin-right">
+                {{updateInfo.BIRTHDAY}}
+              </span>
+          </label>
+      </div>
+
+      <div class="line-spe"></div>
+
+      <div class="list">
+          <label class="item item-input">
+              健康档案号：
+              <input class="align-right" ng-model="updateInfo.HEALTHRECORD_NO" type="text" placeholder="请输入" />
+          </label>
+          <label class="item item-input">
+              手机号码：
+              <input class="align-right" ng-model="updateInfo.PHONE_NO" type="text" placeholder="请输入" />
+          </label>
+          <label class="item item-input">
+              户籍地址：
+              <input class="align-right" ng-model="updateInfo.DOMICILE_ADDRESS" type="text" placeholder="请输入" />
+          </label>
+          <label class="item item-input">
+              联系地址：
+              <input class="align-right" ng-model="updateInfo.CURRENT_ADDRESS" type="text" placeholder="请输入" />
+          </label>
+      </div>
+      <button class="button button-balanced button-block"
+        ng-click="update();">保存</button>
+    </ion-content>
+</ion-view>

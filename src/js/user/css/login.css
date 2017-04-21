@@ -1,0 +1,51 @@
+.login{
+    background: url(../img/login/u5.png) no-repeat;
+    background-size: cover;
+}
+.login .item-width{
+    width: 80%;
+}
+.login .login-btn{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #8BCEEA;
+    color: #fff;
+    margin: 40px 10px 10px 10px;
+    text-align: center;
+    line-height: 40px;
+}
+.login .text{
+    color: #3399FF;
+    margin: 0 10px;
+}
+.login .title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 40px 0px;
+    color: #8BCEEA;
+    margin-top: 100px;
+}
+.login input{
+    border: 1px solid #8BCEEA;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+.third-login .line{
+    border-bottom: 1px solid #fff;
+    height: 15px;
+}
+.third-login .mid{
+    color: #fff;
+    text-align: center;
+}
+.third-login img{
+    width: 50%;
+}
+.third-login .col{
+    text-align: center;
+}

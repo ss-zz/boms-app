@@ -1,0 +1,44 @@
+<ion-view title="申请认证" hide-back-button="true" hide-nav-bar="true" id="certification">
+    <ion-header-bar align-title="center" class="bar-balanced">
+        <div class="buttons">
+            <a class="button button-clear" ng-click="$ionicGoBack()">
+                <i class="ion-chevron-left"></i>
+            </a>
+        </div>
+        <h4 class="title">申请认证</h4>
+    </ion-header-bar>
+    <ion-content class="has-header" padding="true">
+        <div class="content">
+            <div class="font-color">
+                根据《用户使用协议》相关要求，用户需进行实名认证，请按以下提示上传证件照片：
+            </div>
+            <div class="info list">
+                <label class="item item-input">
+                    姓<span class="text-indent">名：</span>
+                    <input type="text" placeholder="输入的姓名需与证件一致" ng-model="certificationParams.realName" />
+                </label>
+                <label class="item item-input">
+                    证件类型：
+                    <select class="cs-select-center select" ng-model="certificationParams.certificatesType">
+                        <option value="">请选择证件类型</option>
+                        <option>身份证</option>
+                        <option>军官证</option>
+                        <option>护照</option>
+                    </select>
+                </label>
+                <label class="item item-input">
+                    证件编码：
+                    <input type="text" placeholder="请输入证件号码或编码" ng-model="certificationParams.certificatesNo" />
+                </label>
+            </div>
+            <div class="line"></div>
+            <div class="font-color tip">请手持证件，要求人和证件一致，并保持照片清晰可见</div>
+            <div class="photo" id="myImage" ng-click="selectPicture()">
+                <img src="img/mine/certification/u12441.png">
+                <br />
+                <span class="font-color">点击添加证件照片</span>
+            </div>
+            <button class="button button-balanced button-block" ng-click="certification()">保存</button>
+        </div>
+    </ion-content>
+</ion-view>

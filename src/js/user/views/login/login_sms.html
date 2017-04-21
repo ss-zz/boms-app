@@ -1,0 +1,29 @@
+<!-- 短信验证码登录页面 -->
+<ion-view title="输入短信验证码"
+    class="register">
+
+    <ion-content class="has-header">
+
+        <div class="list">
+            <label class="item">
+                验证码已发送到+86-{{params.phoneNO}}
+            </label>
+            <span class="item item-input">
+                <img src="img/register/u174.png" />
+                <input type="number" ng-model="params.verifyNO" placeholder="请输入短信验证码">
+                <span class="text-input-verify text-color"
+                    ng-click="sendSms()"
+                    ng-if="!isCountDown">
+                    重新发送
+                </span>
+                <span class="text-input-verify text-color"
+                    ng-if="isCountDown">
+                    {{countDown}}s
+                </span>
+            </span>
+        </div>
+
+        <div class="reg-btn" ng-click="smsLogin()">确定</div>
+
+    </ion-content>
+</ion-view>

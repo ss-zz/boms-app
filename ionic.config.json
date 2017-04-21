@@ -1,0 +1,16 @@
+{
+	"name": "Health_APP",
+	"app_id": "",
+	"gulpStartupTasks": [
+		"build"
+	],
+	"proxies": [
+		{
+			"path": "/api",
+			"proxyUrl": "http://119.61.64.104:8777/VaccinationServer/api/v1"
+		}, {
+			"path": "/api/weather",
+			"proxyUrl": "https://api.thinkpage.cn/v3/weather"
+		}
+	]
+}

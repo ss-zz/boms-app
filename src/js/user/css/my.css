@@ -1,0 +1,396 @@
+/*个人中心-主页面*/
+.main-my{
+	background-color: #F2F2F2;
+}
+.main-my .position-bg{
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	left: 0;
+	height: 94px;
+	left: 10%;
+}
+.main-my .position-bg-op{
+	opacity: 0.7;
+	background-color: #fff;
+	left: 0px;
+	height: 70px;
+	top: 60px;
+}
+.main-my .icon-bg{
+	height: 94px;
+}
+.main-my .icon-bg .img-wrap{
+	width: 94px;
+	height: 94px;
+	float: left;
+	background-color: #eee;
+	border-radius: 94px;
+	overflow: hidden;
+}
+.main-my .icon-bg img{
+	width: 100%;
+	height: 100%;
+}
+.main-my .top-info{
+	background: url(../img/mine/main_my/bg-main.png.png);
+	height: 181px;
+	background-size: cover;
+	opacity: 0.5;
+}
+.main-my .text-info{
+	margin-left: 120px;
+	padding-top: 20px;
+}
+.main-my .text-info .name{
+	font-weight: bold;
+	color: #3399FF;
+	margin-bottom: 5px;
+}
+.main-my .list .item{
+	background-color: #fff;
+	border: none;
+	padding: 10px;
+}
+.main-my .list .item h2{
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+.main-my .list .item .arrow{
+	float: right;
+	margin-right: 10px;
+	background: url(../img/my/u76.png) no-repeat right #fff;
+	background-size: contain;
+}
+.main-my .list .item h2.line{
+	border-bottom: 1px solid #eee;
+}
+.main-my .main-sorts sup{
+	border: 1px solid red;
+	color: red;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+}
+.item-icon-bg-c1{
+	background-image: url(../img/my/u1670.png);
+}
+.item-icon-bg-c2{
+	background-image: url(../img/my/u1630.png);
+}
+.item-icon-bg-c3{
+	background-image: url(../img/my/u11932.png);
+}
+.item-icon-bg-c4{
+	background-image: url(../img/my/u1657.png);
+}
+.item-icon-bg-c5{
+	background-image: url(../img/my/u1683.png);
+}
+.item-icon-bg-c6{
+	background-image: url(../img/my/u2657.png);
+}
+.item-icon-bg-c7{
+	background-image: url(../img/my/u605.png);
+}
+.item-icon-bg-c8{
+	background-image: url(../img/my/u1022.png);
+}
+/*申请认证*/
+#certification .button{
+	margin-left: 0px;
+}
+#certification .bar-balanced{
+	background-color: #00A7B9;
+}
+#certification .font-color{
+	color: #CDCDCD;
+	font-size: 10px;
+	padding-bottom: 10px;
+}
+#certification .list .item{
+	border-width: 0;
+	border-bottom: none;
+}
+#certification .text-indent{
+	text-indent: 2em;
+}
+#certification .list .item input,#certification .list .item select{
+	border: 1px solid #CDCDCD;
+}
+#certification .content .photo{
+	text-align: center;
+	min-height: 150px;
+	border: 1px dashed #CDCDCD;
+}
+#certification .content .photo img{
+	margin-top: 15px;
+}
+#certification .line{
+	border-bottom: 1px solid #CDCDCD;
+}
+#certification .item-input{
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+#certification .tip{
+	margin-top: 10px;
+}
+#certification .select{
+	width: 100%;
+	height: 35px;
+}
+/*用户信息*/
+#basic_info .title{
+	color: #00A7B9
+}
+#basic_info .header-title{
+	color: #00A7B9;
+	font-size: 14px;
+}
+#basic_info .left{
+	display: inline-block;
+	float: left;
+}
+#basic_info .right{
+	display: inline-block;
+	float: right;
+	color: #797979;
+}
+#basic_info .right img{
+	width: 30px;
+	height: 30px;
+}
+#basic_info .right-1{
+	color: #A1A1A1;
+}
+#basic_info .list{
+	margin-bottom: 0px;
+}
+#basic_info .empty-bg{
+	height: 10px;
+}
+/*我的档案*/
+.my-archives .arch-sort{
+	float: left;
+	width: 25%;
+}
+.my-archives .arch-sort a{
+	width: 100%;
+		height: 100px;
+		background-color: #f8f8f8;
+		text-align: center;
+		border-bottom: 1px solid #d7d7d7;
+		border-right: 1px solid #d7d7d7;
+		display: block;
+}
+.my-archives .arch-sort a img{
+	margin-top: 15px;
+	width: 40px;
+	height: 40px;
+}
+.my-archives .arch-sort a.active{
+	border: none;
+	background-color: white;
+	font-weight: bold;
+}
+.my-archives .title-record p{
+	margin-left: 30px;
+}
+.my-archives .time-sort{
+	font-weight: bold;
+	font-size: 15px;
+	padding: 10px;
+	height: 35px;
+}
+.my-archives .green-commit{
+	font-size: 10px;
+}
+/*我的家人*/
+.my-family .item-icon-bg-c4{
+	background-image: url(../img/mine/family/u12939.png);
+	background-repeat: no-repeat;
+	background-size: 35px 35px;
+	text-align: center;
+}
+.my-family .item-icon-bg-c5{
+	background-image: url(../img/mine/family/u12944.png);
+	background-repeat: no-repeat;
+	background-size: 35px 35px;
+	text-align: center;
+	margin-left: 10px;
+}
+.my-family .rightSize{
+	margin-left: 10px;
+}
+.my-family .add-icon{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+}
+.my-family .add-icon img{
+	width: 100%;
+	height: 35px;
+}
+.my-family .add-name{
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	position: relative;
+	top: -10px;
+}
+/*我的预约*/
+#yuyue .row{
+	padding: 16px;
+}
+#yuyue .list{
+	margin-bottom: 0px;
+}
+#yuyue .list .item{
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+#yuyue .bg-grey{
+	background-color: #F2F2F2;
+}
+#yuyue .name-man{
+	color: #B8E1F2;
+}
+#yuyue .name-women{
+	color: #FFDADA;
+}
+#yuyue .header{
+	height: 35px;
+	line-height: 35px;
+	padding: 5px;
+	font-size: 15px;
+	color: white;
+}
+#yuyue .left{
+	float: left;
+	display: inline-block;
+	background-image: url(../img/mine/family/u6736.png);
+	background-size: 20px 20px;
+	background-position-y: center;
+	padding-left: 25px;
+	background-repeat: no-repeat;
+}
+#yuyue .right{
+	display: inline-block;
+	float: right;
+}
+#yuyue .content{
+	padding: 5px;
+}
+#yuyue .padding{
+	padding: 30px;
+}
+#yuyue .cancle-yuyue{
+	display: inline-block;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: white;
+	background-color: #00A7B9;
+	border-radius: 5px;
+}
+#yuyue .tip{
+	margin-top: 15px;
+}
+#yuyue .notice{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: red;
+}
+#yuyue .notice-padding{
+	padding: 5px;
+}
+/*my-message*/
+.my-message .list .item{
+	border: none;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 5px;
+}
+.my-message .color-boy{
+	color: #8BCEEA;
+}
+.my-message .color-girl{
+	color: #F9C8E2;
+}
+.my-message .unread{
+	left: 40px;
+	top: 15px;
+	width: 10px;
+	height: 10px;
+}
+.my-message .title{
+	height: 25px;
+}
+.my-message .time{
+}
+.my-message .item-content{
+	padding: 5px 10px;
+}
+.my-message .message-icon{
+	width: 20px;
+	vertical-align: middle;
+}
+/*我的消息和我的留言*/
+.message-item{
+	background-color: white;
+	padding: 10px;
+	font-size: 0.8em;
+}
+.message-item a{
+	display: block;
+	border-bottom: 1px solid #E4E4E4;
+}
+.message-item .first-p{
+	min-height: 25px;
+}
+.message-item .first-p span{
+	display: inline-block;
+}
+.date{
+	float: left;
+}
+.titleSec{
+	color: red;
+	margin-left: 5px;
+}
+.note_txt{
+	width: 100%;
+	min-height: 150px;
+	border: 1px solid #F2F2F2;
+}
+.word-num{
+	text-align: right;
+	position: relative;
+	margin-top: -30px;
+}
+#my_swSet .empty{
+	height: 10px;
+	width: 100%;
+}
+.my-coll{
+	background-color: #f8f8f8;
+}
+.empty-bg{
+	width: 100%;
+	height: 5px;
+	background-color: #F8F8F8;
+}
+.ideainput{
+	min-height: 150px;
+}
+#my_info .bar-balanced{
+	color: #00A7B9;
+}
+#my_idea .button{
+	margin-left: 0px;
+}

@@ -1,0 +1,132 @@
+<ion-view title="我的档案">
+	<ion-content class="has-header my-archives" padding="false">
+		<div>
+			<div class="arch-sort">
+				<a ng-click="getIndex(1)" ng-class="{'active':currentIndex==1}">
+					<img src="img/my/u19429.png"><br />健康记录
+				</a>
+				<a ng-click="getIndex(2)" ng-class="{'active':currentIndex==2}">
+					<img src="img/my/u19419.png"><br />门诊记录
+				</a>
+				<a ng-click="getIndex(3)" ng-class="{'active':currentIndex==3}">
+					<img src="img/my/u19421.png"><br />住院记录
+				</a>
+				<a ng-click="getIndex(4)" ng-class="{'active':currentIndex==4}">
+					<img src="img/my/u19423.png"><br />检验记录
+				</a>
+				<a ng-click="getIndex(5)" ng-class="{'active':currentIndex==5}">
+					<img src="img/my/u19425.png"><br />体检记录
+				</a>
+				<a ng-click="getIndex(6)" ng-class="{'active':currentIndex==6}">
+					<img src="img/my/u19427.png"><br />慢病记录
+				</a>
+			</div>
+			<div class="float-right">
+				<div ng-show="currentIndex==1">
+					<div class="title-record">
+						<div class="time-sort">个人信息</div>
+						<p>姓名：周芳</p>
+						<p>身份证号：39283282928392</p>
+						<p>性别：女</p>
+						<p>联系电话：18379283442</p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">药物过敏史</div>
+						<p>无</p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">遗传病史</div>
+						<p>无</p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">个人残疾史</div>
+						<p>无</p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">个人疾病史</div>
+						<p>无</p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">个人手术史</div>
+						<p>无</p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">个人外伤史</div>
+						<p>无</p>
+					</div>
+				</div>
+				<div ng-show="currentIndex==2">
+					<div class="title-record">
+						<div class="time-sort">2016-09-18</div>
+						<p>就诊医院：北京垂杨柳医院</p>
+						<p>就诊科室：内科</p>
+						<p>主诉：感冒</p>
+						<p>处理：药物治疗</p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">2016-04-18</div>
+						<p>就诊医院：北京垂杨柳医院</p>
+						<p>就诊科室：内科</p>
+						<p>主诉：感冒</p>
+						<p>处理：药物治疗</p>
+					</div>
+				</div>
+				<div ng-show="currentIndex==3">
+					<div class="title-record">
+						<div class="time-sort">2016-09-18</div>
+						<p>就诊医院：北京垂杨柳医院</p>
+						<p>就诊科室：外科科</p>
+						<p>主诉：骨折</p>
+						<p>结果：伤愈出院</p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">2016-04-18</div>
+						<p>就诊医院：北京垂杨柳医院</p>
+						<p>就诊科室：外科</p>
+						<p>主诉：扭伤</p>
+						<p>结果：伤愈出院</p>
+					</div>
+				</div>
+				<div ng-show="currentIndex==4">
+					<div class="title-record">
+						<div class="time-sort">2016-09-18</div>
+						<p>就诊医院：北京朝阳妇儿医院</p>
+						<p>项目名称：产前检查</p>
+						<p>检查检验项目：血常规</p>
+						<p>检查检验单：<span class="green-commit">血常规报告单.pdf</span></p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">2016-04-18</div>
+						<p>就诊医院：北京朝阳妇儿医院</p>
+						<p>项目名称：产前检查</p>
+						<p>检查检验项目：血常规</p>
+						<p>检查检验单：<span class="green-commit">血常规报告单.pdf</span></p>
+					</div>
+				</div>
+				<div ng-show="currentIndex==5">
+					<div class="title-record">
+						<div class="time-sort">2016-09-18</div>
+						<p>体检医院：北京垂杨柳医院</p>
+						<p>体检项目：常规身体体检</p>
+						<p>体检报告：<span class="green-commit">体检报告.pdf</span></p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">2016-08-05</div>
+						<p>体检医院：北京朝阳妇儿医院</p>
+						<p>体检项目：第五次产前检查</p>
+						<p>体检报告：<span class="green-commit">产检报告.pdf</span></p>
+					</div>
+					<div class="title-record">
+						<div class="time-sort">2016-06-25</div>
+						<p>体检医院：北京垂杨柳医院</p>
+						<p>体检项目：第4次产前检查</p>
+						<p>体检报告：<span class="green-commit">产检报告.pdf</span></p>
+					</div>
+				</div>
+				<div ng-show="currentIndex==6" class="margin-left">
+					<div class="time-sort">无</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

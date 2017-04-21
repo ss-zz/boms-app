@@ -1,0 +1,390 @@
+/* Empty. Add your own CSS if you like */
+body{
+	color: #3A3838;
+	font-family: '微软雅黑 Regular', '微软雅黑';
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, fieldset,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	font-family: '微软雅黑 Regular', '微软雅黑';
+}
+body a{color: #666666;}
+a{color: #000;text-decoration: none;}
+span{line-height: 1.8;}
+table{width: 100%;text-align: center;}
+
+.row-no-padding > .col { padding: 5px; }
+.button-small {
+	padding: 5px 20px;
+	min-width: 10px;
+	min-height: 0px;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.i{font-style: italic;}
+.scroll { height: 100%;}
+.paragraph{text-indent: 2em;line-height: 1.5em;}
+.overflow{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+
+.border{border: 1px solid #f2f2f2;}
+.border-main{border: 1px solid #00A7B9;;}
+.border-bottom{border-bottom: 1px solid #f2f2f2;}
+.border-left{border-left: 1px solid #f2f2f2;}
+.border-right{border-right: 1px solid #f2f2f2;}
+.border-top{border-top: 1px solid #f2f2f2;}
+.border-color-main{border-color: #00A7B9;}
+.border-color-white{border-color: white;}
+.border-weight{border-width: 8px;}
+.border-none{border: none;}
+.border-radius{border-radius: 5px;}
+
+.margin{margin: 10px;}
+.margin-none{margin: 0px;}
+.margin-left{margin-left: 10px;}
+.margin-right{margin-right: 10px;}
+.margin-bottom{margin-bottom: 10px;}
+.margin-top{margin-top: 10px;}
+.margin-auto{margin: 0 auto;}
+
+.padding{padding: 10px;}
+.padding-left{padding-left: 10px;}
+.padding-right{padding-right: 10px;}
+.padding-bottom{padding-bottom: 10px;}
+.padding-top{padding-top: 10px;}
+.padding-none{
+	padding: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+}
+
+.color-main{color: #00A7B9;}
+.color-white{color: #fff;}
+.color-blue{color: #00699C;}
+.color-light{color: #999999;}
+.color-cyan{color: #8BCEEA;}
+.color-red{color: red;}
+
+.bg-main{background-color: #00A7B9;}
+.bg-cyan{background-color: #8BCEEA;}
+.bg-white{background-color: #ffffff;}
+.bg-whitefull{background-color: #ffffff;height: 100%;margin-bottom: 45px}
+.bg-spe{background-color: rgba(41, 173, 104, 0.286274509803922);}
+.bg-grey{background-color: rgba(242, 242, 242, 0.349019607843137);}
+.bg-darkGrey{background-color: rgba(160, 160, 160, 1);}
+.bg-none{background: none;}
+
+.line-spe{width: 100%; height: 8px; background-color: #f5f5f5;}
+
+.float-right{float: right;}
+.float-left{float: left;}
+
+.font-i{font-style: italic;}
+.font-weight{font-weight: 700;}
+.font-size-small{font-size: 0.8em;}
+.font-size-big{font-size: 1.2em;}
+
+.text-intent{text-indent: 2em;}
+
+.nowrap{white-space: nowrap;}
+.custom-item{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid #eee;
+}
+
+.line-height-big{line-height: 1.8em;}
+
+.img-full{width: 100%;}
+
+/*自定义textarea*/
+.textarea{
+	width: 100%;
+	line-height: 1.5em;
+}
+/*没有更多*/
+.nomore{
+	text-align: center;
+	margin-bottom: 10px;
+}
+/*固定行文字*/
+p.text1 {
+/*单行*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+p.text2 {
+/*多行*/
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	white-space: normal;
+}
+/*消息提醒背景色*/
+.msg-bgcolor-typea{background-color: rgba(202, 242, 221, 1);}
+.msg-bgcolor-typeb{background-color: rgba(255, 238, 213, 1);}
+.msg-bgcolor-typec{background-color: rgba(248, 220, 247, 1);}
+.msg-bgcolor-typed{background-color: rgba(202, 242, 221, 1);}
+.msg-bgcolor-typee{background-color: rgba(154, 231, 190, 1);}
+.msg-bgcolor-typef{background-color: rgba(255, 255, 204, 1);}
+
+/*星星评价*/
+.evaluate-select-item{
+	float: left;
+}
+/*自定义自动化-css3*/
+@-webkit-keyframes fadeIn {
+	0% {
+	opacity: 0; /*初始状态 透明度为0*/
+	}
+	100% {
+	opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+/*自定义toast*/
+.ag-toast{
+	position: fixed;
+	width: 60%;
+	text-align: center;
+	bottom: 150px;
+	z-index: 9999;
+	background-color: #867C7C;
+	margin: 0px auto;
+	border-radius: 20px;
+	line-height: 30px;
+	padding: 0px 20px;
+	color: #fff;
+	box-shadow: 2px 2px 3px #888888;
+	left: 0px;
+	right: 0px;
+
+	-webkit-animation-name: fadeIn; /*动画名称*/
+	-webkit-animation-duration: 1s; /*动画持续时间*/
+	-webkit-animation-iteration-count: 1; /*动画次数*/
+	-webkit-animation-delay: 0s; /*延迟时间*/
+}
+/*覆盖ionic默认样式>>>*/
+/*弹出框*/
+.popup-container.active .popup{
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #FFF;
+}
+.popup-head,.popup-body{padding-bottom: 5px;}
+.popup-body{min-height: 100px;}
+.popup-buttons .button{border-radius: 5px;border: none;}
+.popup-container .popup{width: 80%;}
+.popup-container{position: fixed;}
+.popup-title{
+	font-size: 1.8em;
+	text-align: left;
+	margin-left: 30px;
+	border-left: 3px solid #33cd5f;
+	padding-left: 20px;
+}
+.input-label{
+	font-size: 14px;
+}
+/*覆盖ionic默认样式<<<*/
+
+/*自定义导航图标>>>*/
+.tab-item .tab-icon-active{margin-top: -10px;}
+.tab-item .tab-icon-govinfo{background:url(../img/tab-govinfo.png) no-repeat center;}
+.tab-item .tab-icon-news{background:url(../img/tab-news.png) no-repeat center;}
+.tab-item .tab-icon-homepage{background:url(../img/tab-homepage.png) no-repeat center;}
+.tab-item .tab-icon-serv{background:url(../img/tab-serv.png) no-repeat center;}
+.tab-item .tab-icon-my{background:url(../img/tab-my.png) no-repeat center;}
+.tab-item{
+	overflow: visible;
+	opacity: 1;
+}
+.tab-item i.icon{
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+}
+.tabs-striped.tabs-stable .tab-item.activated,
+.tabs-striped.tabs-stable .tab-item.active,
+.tabs-striped.tabs-stable .tab-item.tab-item-active{
+	border: none;
+	border-width: 0;
+}
+.tabs-striped.tabs-stable .tab-item{
+	color: #444;
+}
+.tabs-striped.tabs-stable .tabs{
+	background-color: #fff;
+	border-top: 1px solid #eee;
+}
+/*loading*/
+.loading-container .loading{
+	background-color: #00A7B9;
+	color: #fff;
+}
+/*<<<*/
+
+/*自定义拖拽样式>>>*/
+.as-sortable-placeholder {
+	border: 1px dashed darkgrey;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.as-sortable-drag {
+	opacity: .8;
+}
+.drag-horizontally{
+	float: left;
+	width: 100%;
+	clear: right;
+}
+.drag-horizontally .as-sortable-item,
+.drag-horizontally .as-sortable-placeholder {
+	display: block;
+	float: left;
+}
+.drag-horizontally .sortable-row:after {
+	display: inline-block;
+}
+/*<<<*/
+/*修改默认列表字体大小*/
+.list .item{
+	border-bottom: 1px solid #E4E4E4;
+	font-size: 1.0em;
+}
+/*修改默认action-sheet样式*/
+.platform-android .action-sheet .action-sheet-title,
+.platform-android .action-sheet .button{
+	text-align: center;
+	border-bottom: 1px solid #eee;
+}
+.action-sheet-wrapper{
+	padding: 5px;
+}
+/*修改popup默认显示效果*/
+.popup-body{
+	min-height: 20px;
+}
+/*修改默认button样式*/
+.button.button-balanced{
+	background-color: #00A7B9;
+}
+.button.button-balanced.active{
+	background-color: #A4E0E6;
+}
+.button.button-block{
+	width: 80%;
+	margin: 10px auto;
+}
+/*行末箭头*/
+.item-arrow{
+	position: relative;
+}
+.item-arrow:after{
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	position: absolute;
+	top: 50%;
+	right: 11px;
+	display: block;
+	margin-top: -8px;
+	color: #ccc;
+	content: "\f125";
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 16px;
+	font-family: 'Ionicons';
+	line-height: 1;
+	speak: none;
+}
+/*通用标题*/
+.common-title{
+	margin: 10px;
+	padding-left:10px;
+	border-left: 2px solid #00A7B9;
+	width: 100%;
+	color: #00A7B9;
+}
+.common-title .right{
+	float: right;
+	color: #d3d3d3;
+	margin-right: 20px;
+}
+/*特殊的背景图片-圆形*/
+.item-icon-bg{
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.item-icon-bg img{
+	width: 60%;
+	height: 60%;
+	margin-top: 7px;
+	margin-left: 7px;
+}
+/*下划线*/
+.under-line{
+	background: url(../img/under-line.png) repeat-x bottom;
+}
+/*右侧虚线*/
+.right-line{
+	background: url(../img/right-line.png) repeat-y right;
+}
+/*问医生*/
+.qdoctor{
+	background-color: #CCC;
+	position: fixed;
+	bottom: 60px;
+	right: 20px;
+	width: 50px;
+	color: #fff;
+	text-align: center;
+	border-radius: 50px;
+	box-shadow: 5px 5px 10px #888888;
+	font-size: 0.8px;
+	padding: 5px 5px;
+	border: 1px solid #fff;
+}
+.qdoctor img{
+	width: 20px;
+	height: 20px;
+}
+.qdoctor div{
+	font-size: 0.5em;
+	margin-top: -8px;
+}
+/*图表*/
+.charts-tag{
+	width: 100%;
+	height: 300px;
+}

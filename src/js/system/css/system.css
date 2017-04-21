@@ -1,0 +1,88 @@
+/*aboutus*/
+.aboutus .zone{
+    padding: 50px 10px;
+}
+.aboutus .info{
+    color: #A1A1A1;
+    margin-top: 200px;
+}
+.aboutus .text-indent{
+    text-indent: 2em;
+}
+/*vaccalert*/
+.vaccalert{
+    background-color: #F8F8F8;
+}
+.vaccalert .title{
+    background-color: #8BCEEA;
+    color: #fff;
+    padding: 10px 20px;
+}
+.vaccalert .line{
+    background: url(../img/my/u1625.png) repeat-x bottom;
+}
+.vaccalert .list .item{
+    padding-left: 40px;
+    font-size: 1.0em;
+    background-color: #fff;
+}
+.vaccalert .btn-save{
+    margin: 0 auto;
+    color: #fff;
+    padding: 5px 20px;
+    background-color: #8BCEEA;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+/*useragreement*/
+.user-agreement .title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.user-agreement .content{
+    margin-bottom: 50px;
+}
+.user-agreement .content p{
+    text-indent: 2em;
+    font-size: 0.8em;
+}
+
+/*userhelps*/
+.user-helps{
+    background-color: #F7F7F7;
+}
+.user-helps .list{
+    background-color: #fff;
+}
+.user-helps .list .item{
+    margin: 0px 10px;
+}
+.user-helps .list .border-bottom{
+    border-bottom: 1px solid #eee;
+}
+/*helps*/
+.helps{text-align: center;}
+.helps p{
+    text-align: left;
+}
+.helps img{
+    width: 95%;
+    margin: 20px 0px;
+    border: 1px solid #eee;
+}
+.helps .title{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 10px 30px 10px;
+}
+.helps .content{
+    margin-bottom: 50px;
+}
+/*feedback*/
+.user-feedback textarea{
+    width: 100%;
+}
+

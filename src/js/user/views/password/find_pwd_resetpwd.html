@@ -1,0 +1,42 @@
+<ion-view title="找回密码"
+    class="register">
+
+    <ion-content class="has-header">
+
+        <div class="list">
+            <label class="item">
+                验证码已经发送到+86-{{params.phoneNO}}
+            </label>
+            <span class="item item-input">
+                <img src="img/register/u174.png" />
+                <input type="number" ng-model="params.verifyNO" placeholder="请输入短信验证码">
+                <span class="text-input-verify text-color"
+                    ng-click="sendSms()"
+                    ng-if="!isCountDown">
+                    重新发送
+                </span>
+                <span class="text-input-verify text-color"
+                    ng-if="isCountDown">
+                    {{countDown}}s
+                </span>
+            </span>
+
+            <label class="item item-input">
+                <img src="img/register/u153.png" />
+                <input type="password" placeholder=" 请输入6~20位数字、字母密码"
+                    ng-model="params.password">
+                <img src="img/register/u151.png" />
+            </label>
+            <label class="item item-input">
+                <img src="img/register/u153.png" />
+                <input type="password" placeholder="请再次输入新密码"
+                    ng-model="params.passwordNew">
+                <img src="img/register/u151.png" />
+            </label>
+
+        </div>
+
+        <div class="reg-btn" ng-click="findPwd()">确定</div>
+
+    </ion-content>
+</ion-view>

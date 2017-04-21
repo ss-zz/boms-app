@@ -1,0 +1,50 @@
+<ion-view title="我的消息" class="my-message">
+	<ion-content class="has-header" padding="true">
+
+		<ion-refresher
+			pulling-text="下拉刷新..."
+			on-refresh="refresh()">
+		</ion-refresher>
+
+		<ion-list class="list">
+
+			<ion-item class="border-bottom"
+				ng-repeat="item in items | orderBy: 'MESSAGE_STATE'"
+				ng-click="clickReaded(item)">
+				<div class="item-icon-bg">
+
+					<!-- 是否已读 -->
+					<img src="img/my/u2689.png"
+						class="unread"
+						ng-if="item.MESSAGE_STATE == '01'"/>
+				</div>
+				<div class="title item-arrow">
+					<span class="time">{{item.SEND_TIME | date:'yyyy-MM-dd HH:mm'}}</span>
+				</div>
+				<p class="text1">
+					<span class="color-red" ng-if="item.CHILD_NAME">
+						【{{item.CHILD_NAME}}】
+					</span>
+					{{item.MESSAGE_CONTENT}}
+				</p>
+
+				<ion-option-button class="button-assertive"
+					ng-click="del(item, $index)">
+					删除
+				</ion-option-button>
+			</ion-item>
+		</ion-list>
+
+		<!-- 加载中提示 -->
+		<div class="center padding" ng-show="isRun">加载中...</div>
+		<ion-infinite-scroll
+			ng-if="hasmore"
+			on-infinite="loadMore()"
+			distance="5%"
+			immediate-check="false"
+			>
+		</ion-infinite-scroll>
+
+	</ion-content>
+</ion-view>
+
